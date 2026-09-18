@@ -1,0 +1,6 @@
+{
+  "name": "Blank_Dev - 실무 장애 트러블슈팅 훈련소",
+  "description": "실제 프로덕션 장애 상황에서 로그, 지표, 실행계획을 분석하고 원인을 추론하여 해결하는 개발자 트러블슈팅 훈련 시뮬레이션 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

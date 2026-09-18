@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-programmers-bg: #0c1523;
+  --color-programmers-header: #172334;
+  --color-programmers-surface: #172334;
+  --color-programmers-card: #1b293c;
+  --color-programmers-inner: #0f1926;
+  --color-programmers-border: #253346;
+  --color-programmers-border-light: #32435b;
+  --color-programmers-blue: #0078ff;
+  --color-programmers-blue-hover: #0064d6;
+  --color-programmers-blue-active: #0050b3;
+  --color-programmers-green: #00ba7c;
+  --color-programmers-amber: #f59e0b;
+  --color-programmers-purple: #8b5cf6;
+  --color-programmers-red: #ef4444;
+  --color-programmers-text: #f8fafc;
+  --color-programmers-muted: #788ea6;
+  --color-programmers-subtext: #94a3b8;
+
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+/* Base typography and crisp text rendering */
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.018em;
+  line-height: 1.6;
+}
+
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-feature-settings: "calt" 1, "tnum" 1;
+}
+
+/* Programmers Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c1523;
+}
+::-webkit-scrollbar-thumb {
+  background: #253346;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #32435b;
+}
+
+/* Mobile touch and responsive optimizations */
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  background-color: #0c1523;
+}
+
+body {
+  background-color: #0c1523;
+  color: #cbd5e1;
+}
+
+button, a {
+  touch-action: manipulation;
+}
+
+.pb-safe {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+
+/* Hide scrollbars for horizontal filter chips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
